@@ -1,0 +1,331 @@
+/*Author - Kedar Patil */
+
+/*** RESET ***/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*** Header ***/
+header {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 10;
+	top: 0px;
+}
+.bg-transparent {
+	width: 100%;
+	height: 100%;
+	background: #000000;
+	opacity: 0.2;
+}
+.social-links {
+	float: left;
+    height: calc(100% - 20px);
+    display: inline-block;
+    top: -50px;
+    position: relative;
+	padding: 10px;
+}
+.social-links li {
+	height: 30px;
+	width: 30px;
+	border-radius: 100px;
+	margin-right: 10px;
+	float: left;
+    display: inline-block;
+}
+.social-links li a{
+	height: 30px;
+    width: 30px;
+    display: block;
+}
+.social-links li .fa {
+	width: 30px;
+    height: 30px;
+    color: rgba(255, 255, 255, 0.8);
+    line-height: 30px;
+    text-align: center;
+	border-radius: 100px;
+	font-size: 20px;
+}
+.social-links li .fa:hover {
+	color: #fff;
+}
+.fa-facebook {
+	background-color: #3d5b99;	
+}
+.fa-twitter {
+	background-color: #32CCFE;	
+}
+.fa-youtube-play {
+	background-color: #C52F30;	
+}
+.logo {
+	float: right;
+    width: 130px;
+    background: #334b54 url(../images/ishanya.png) center center;
+    height: calc(100% - 20px);
+    display: inline-block;
+    top: -50px;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+
+/*** Footer ***/
+footer {
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 10;
+	bottom: 0px;
+}
+.profile-links {
+	float: right;
+    height: calc(100% - 20px);
+    display: inline-block;
+    top: -50px;
+    position: relative;
+	padding: 5px 20px;
+}
+.profile-links li {
+	height: 40px;
+	width: 40px;
+	border-radius: 100px;
+	margin-left: 20px;
+	float: right;
+    display: inline-block;
+}
+.profile-links li a{
+	height: 40px;
+    width: 40px;
+    display: block;
+}
+.profile-links li .pl {
+	width: 34px;
+    height: 34px;
+    border-radius: 100px;
+	background: url(../images/profile-rushi.png) center center;
+    display: block;
+    border: 3px solid #ccc;
+}
+.profile-links li .pl:hover {
+	border: 3px solid #fff;
+}
+
+/*** Google Map ***/
+.gmnoprint.gm-bundled-control {
+	bottom: 105px !important;
+}
+
+/*** section ***/
+section {
+	position: absolute;
+	z-index: 20;
+	padding: 0px;
+	margin: 0px;
+	bottom: 0px;
+	right: 0px;
+}
+section a {
+	width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: -12px;
+    z-index: 200;
+    right: -29px;
+	text-decoration: none;
+    text-align: center;
+	border: 3px solid #000;
+}
+section a:hover {
+	border: 3px solid #fff;
+}
+section a:before {
+	content: "\f00d";
+	font: normal normal normal 14px/1 FontAwesome;
+	color: #000;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+}
+.info-video {
+	width: 780px;
+	height: 429px;
+	border-radius: 10px;
+	position: absolute;
+	display: block;
+	bottom: 130px;
+	margin: 0px;
+	right: 70px;
+	display: none;	
+}
+.yt-iframe {
+	position: relative;
+	display: block;
+	height: 100%;
+	width: 100%;
+	border: 10px solid #000;
+}
+
+.intro {
+	position: absolute;
+    left: 5%;
+    z-index: 2;
+    top: 30%;
+    flex-direction: row;
+    display: none;
+    width: 90%;
+}
+.intro .intro-image-main {
+	margin: auto;
+	width: 200px;
+	float: left;
+}
+.intro .intro-image {
+	height: 180px;
+    width: 180px;
+    background: #334b54 url(../images/ishanya_full.png) 0px 13px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 100px;
+}
+.intro .intro-content{
+	margin-left: 175PX;
+}
+
+.content-mask{
+	position: absolute;
+	background: black;
+	height: 100%;
+	width: calc(100% - 200px);
+	padding: 10px;
+	opacity: 0.8;
+	border-radius: 10px;
+	margin: auto;
+	right: 10px;
+}
+
+.intro .intro-content .tlt{
+	color: white;
+    font-family: fantasy;
+    font-size: 30px;
+	padding: 25px;
+}
+.intro-title {
+	color: #ef8d22;
+    font-family: fantasy;
+    font-size: 80px;
+}
+
+.intro a {
+	width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background: #fff;
+    display: block;
+    position: absolute;
+    top: -12px;
+    z-index: 200;
+    right: -29px;
+	text-decoration: none;
+    text-align: center;
+	border: 3px solid #000;
+}
+.intro a:hover {
+	border: 3px solid #fff;
+}
+.intro a:before {
+	content: "\f00d";
+	font: normal normal normal 14px/1 FontAwesome;
+	color: #000;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+}
+.intro>span {
+	display: none;
+}
+@media screen and (max-width: 1000px) {
+	.info-video {
+	  width: max-content;
+	  height: auto;
+	  border-radius: 10px;
+	  position: absolute;
+	  display: block;
+	  bottom: 130px;
+	  margin: 0px;
+	  right: 30px;
+	  display: none;
+	}
+	.intro {
+		top: 8%;
+	}
+	.intro a{
+		top: auto;
+		right: -5px;
+	}
+	.intro .intro-image-main {
+		margin: auto;
+		width: 200px;
+		float: none;
+	}
+	.intro .intro-content {
+		margin-left: 0PX;
+	}
+	.intro .intro-content .tlt {
+	    font-size: 115%;
+	}
+
+	.content-mask{
+		height: calc(100% - 200px);
+		width: calc(100% - 10px);
+	}
+}
